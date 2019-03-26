@@ -18,7 +18,7 @@ import javax.mail.internet.MimeMessage;
 @SpringBootTest
 public class HelloService {
 
-    private String to="18773239391@126.com";
+    private String to="to@126.com";  //例如123123@126.com
     @Resource
     MailService mailService;
 
