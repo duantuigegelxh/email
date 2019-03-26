@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>邮件模板（发送模板邮件的时候需要用到)</title>
+</head>
+<body>
+       您好，感谢您的注册，这是一封验证邮件，请点击下面的链接完成注册，感谢您的支持！
+       <!--模板后面的id是变化的，所以我们通过传不同的id来发送不同的邮件-->
+       <a href="#" th:href="@{https://blog.csdn.net/lxh123456789asd?{id}(id=${id})}">激活账户</a>
+</body>
+</html>
